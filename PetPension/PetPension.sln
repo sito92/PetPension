@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetPension", "PetPension\PetPension.csproj", "{75E6A57B-0AFB-4245-961E-0BD8CD5C83C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetPension.Tests", "PetPension.Tests\PetPension.Tests.csproj", "{379B2392-2360-42FD-A588-AB4CD3DFAD89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E6A57B-0AFB-4245-961E-0BD8CD5C83C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E6A57B-0AFB-4245-961E-0BD8CD5C83C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E6A57B-0AFB-4245-961E-0BD8CD5C83C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E6A57B-0AFB-4245-961E-0BD8CD5C83C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379B2392-2360-42FD-A588-AB4CD3DFAD89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379B2392-2360-42FD-A588-AB4CD3DFAD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379B2392-2360-42FD-A588-AB4CD3DFAD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379B2392-2360-42FD-A588-AB4CD3DFAD89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F4779E9-5735-4808-A13E-1D648E4FD606}
+	EndGlobalSection
+EndGlobal
