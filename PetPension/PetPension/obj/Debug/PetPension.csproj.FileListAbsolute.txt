@@ -84,7 +84,11 @@ D:\PROJECTS\PetPension\PetPension\PetPension\bin\Microsoft.AI.DependencyCollecto
 D:\PROJECTS\PetPension\PetPension\PetPension\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\PROJECTS\PetPension\PetPension\PetPension\bin\Microsoft.AI.WindowsServer.xml
 D:\PROJECTS\PetPension\PetPension\PetPension\bin\Microsoft.AI.Web.xml
-D:\PROJECTS\PetPension\PetPension\PetPension\obj\Debug\PetPension.csprojResolveAssemblyReference.cache
 D:\PROJECTS\PetPension\PetPension\PetPension\obj\Debug\PetPension.csproj.CoreCompileInputs.cache
 D:\PROJECTS\PetPension\PetPension\PetPension\obj\Debug\PetPension.dll
 D:\PROJECTS\PetPension\PetPension\PetPension\obj\Debug\PetPension.pdb
+D:\PROJECTS\PetPension\PetPension\PetPension\bin\EntityFramework.dll
+D:\PROJECTS\PetPension\PetPension\PetPension\bin\EntityFramework.SqlServer.dll
+D:\PROJECTS\PetPension\PetPension\PetPension\bin\EntityFramework.xml
+D:\PROJECTS\PetPension\PetPension\PetPension\bin\EntityFramework.SqlServer.xml
+D:\PROJECTS\PetPension\PetPension\PetPension\obj\Debug\PetPension.csprojResolveAssemblyReference.cache
