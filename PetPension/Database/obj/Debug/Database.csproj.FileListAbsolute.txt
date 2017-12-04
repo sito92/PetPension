@@ -1,9 +1,0 @@
-D:\Projects\PetPension\PetPension\Database\bin\Debug\Database.dll.config
-D:\Projects\PetPension\PetPension\Database\bin\Debug\Database.dll
-D:\Projects\PetPension\PetPension\Database\bin\Debug\Database.pdb
-D:\Projects\PetPension\PetPension\Database\bin\Debug\EntityFramework.dll
-D:\Projects\PetPension\PetPension\Database\bin\Debug\EntityFramework.SqlServer.dll
-D:\Projects\PetPension\PetPension\Database\bin\Debug\EntityFramework.xml
-D:\Projects\PetPension\PetPension\Database\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\PetPension\PetPension\Database\obj\Debug\Database.dll
-D:\Projects\PetPension\PetPension\Database\obj\Debug\Database.pdb
