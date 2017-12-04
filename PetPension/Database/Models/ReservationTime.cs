@@ -12,5 +12,6 @@ namespace Database.Models
         public DateTime From { get; set; }
         public DateTime To { get; set; }
         public Reservation Reservation { get; set; }
+
     }
 }
