@@ -17,10 +17,10 @@ namespace Database.Models
         public int ReservationTimeId { get; set; }
 
         public ReservationTime ReservationTime { get; set; }
-        public Pet Pet { get; set; }
+        public virtual Pet Pet { get; set; }
 
         [ForeignKey("Room")]
         public int RoomId { get; set; }
-        public Room Room { get; set; }
+        public virtual Room Room { get; set; }
     }
 }

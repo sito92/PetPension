@@ -11,7 +11,7 @@ namespace Database.Models
         public int Id { get; set; }
         public DateTime From { get; set; }
         public DateTime To { get; set; }
-        public Reservation Reservation { get; set; }
+        public virtual Reservation Reservation { get; set; }
 
     }
 }

@@ -11,6 +11,6 @@ namespace Database.Models
         public int Id { get; set; }
         public int RoomTypeId { get; set; }
         public string Name { get; set; }
-        public ICollection<Reservation> Reservations { get; set; }
+        public virtual ICollection<Reservation> Reservations { get; set; }
     }
 }
