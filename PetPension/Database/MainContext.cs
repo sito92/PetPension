@@ -10,7 +10,7 @@ namespace Database
 {
     public class MainContext : DbContext
     {
-        public MainContext() : base("name=")
+        public MainContext() : base("name=MainContext")
         {
 
         }
