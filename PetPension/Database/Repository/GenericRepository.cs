@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Database.Repository
 {
     public abstract class GenericRepository<C, T> :
-    IGenericRepository<T> where T : class where C : DbContext, new()
+    IGenericRepository<T> where T : class where C : DbContext,new()
     {
 
         private C _entities = new C();

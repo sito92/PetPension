@@ -13,5 +13,7 @@ namespace Database.Models
         public DateTime To { get; set; }
         public virtual Reservation Reservation { get; set; }
 
+        public int AllDay => 1;
+        public string RoomName => Reservation.RoomId.ToString();
     }
 }

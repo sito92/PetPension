@@ -17,6 +17,8 @@ namespace Database.Models
         public int ReservationTimeId { get; set; }
 
         public ReservationTime ReservationTime { get; set; }
+
+        public int? PetId { get; set; }
         public virtual Pet Pet { get; set; }
 
         [ForeignKey("Room")]

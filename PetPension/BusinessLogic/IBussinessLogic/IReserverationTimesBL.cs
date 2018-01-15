@@ -9,6 +9,7 @@ namespace BusinessLogic.IBussinessLogic
 {
     public interface IReserverationTimesBL
     {
-        List<ReservationTime> GetClosestReservetionTimes(int roomType,DateTime startDate,int duration);
+        List<FreeTime> ReserveTime(int roomType, DateTime startDate, int duration);
+        List<FreeTime> GetClosestfreeTimes(int roomType, DateTime startDate, DateTime endDate);
     }
 }

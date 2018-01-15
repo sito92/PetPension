@@ -21,13 +21,14 @@ namespace Database.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-            var pets = GetPets();
-            context.Pets.AddOrUpdate(x => x.Id, pets.ToArray());
-            context.Rooms.AddOrUpdate(GetRooms(pets).ToArray());
+            //var pets = GetPets();
+            //context.Pets.AddOrUpdate(x => x.Id, pets.ToArray());
+            //context.Rooms.AddOrUpdate(GetRooms(pets).ToArray());
             
         }
         private List<Models.Room> GetRooms(List<Pet> pets)
         {
+            var startDate = DateTime.Parse("2017-12-17 00:00:00.000");
             var result = new List<Models.Room>();
             for (int i=0;i<13; i++)
             {
@@ -38,28 +39,22 @@ namespace Database.Migrations
                     {
                         new Reservation(){CreatedTime = DateTime.Now,Pet = pets.FirstOrDefault(),ReservationTime = new ReservationTime()
                         {
-                            From = DateTime.Now.AddDays(i),
-                            To = DateTime.Now.AddDays(i+2)
+                            From = startDate.AddDays(i),
+                            To = startDate.AddDays(i+2)
                             
                         }},
                         new Reservation(){CreatedTime = DateTime.Now,Pet = pets.FirstOrDefault(),ReservationTime = new ReservationTime()
                         {
-                            From = DateTime.Now.AddDays(i+3),
-                            To = DateTime.Now.AddDays(i+5)
+                            From = startDate.AddDays(i+4),
+                            To = startDate.AddDays(i+6)
 
                         }},
                         new Reservation(){CreatedTime = DateTime.Now,Pet = pets.FirstOrDefault(),ReservationTime = new ReservationTime()
                         {
-                            From = DateTime.Now.AddDays(i+6),
-                            To = DateTime.Now.AddDays(i+8)
+                            From = startDate.AddDays(i+7),
+                            To = startDate.AddDays(i+9)
 
                         }},
-                        new Reservation(){CreatedTime = DateTime.Now,Pet = pets.FirstOrDefault(),ReservationTime = new ReservationTime()
-                        {
-                            From = DateTime.Now.AddDays(i+9),
-                            To = DateTime.Now.AddDays(i+11)
-
-                        }}
                     }
                 });
             }

@@ -1,0 +1,53 @@
+﻿@model PetPension.Models.NewReservationViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Wybierz czas pomiędzy:</h2>
+@Model.MaxStarTime.ToString("yyyy-MM-dd") a @Model.MaxEndTime.ToString("yyyy-MM-dd")
+
+@using (Html.BeginForm("ReserveTime", "ReservationTime"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Czas początkowy</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.StarTime, new {@Value = Model.MaxStarTime.ToString("yyyy-MM-dd"), @class = "form-control datepicker"})
+                @Html.ValidationMessageFor(model => model.StarTime, "", new {@class = "text-danger"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Czas końcowy</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.EndTime, new { @Value = Model.MaxEndTime.ToString("yyyy-MM-dd"), @class = "form-control datepicker" })
+                @Html.ValidationMessageFor(model => model.EndTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Zarezerwuj" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@section Datepicker {
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                dateFormat: "yy-mm-dd",
+                minDate: "@Model.MaxStarTime.ToString("yyyy-MM-dd")",
+                maxDate:"@Model.MaxEndTime.ToString("yyyy-MM-dd")"
+            });
+        });
+    </script>
+}

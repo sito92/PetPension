@@ -47,6 +47,8 @@ namespace PetPension
             // container.RegisterType<IProductRepository, ProductRepository>();
 
             container.RegisterType<IReservationTimesRepository, ReservationTimesRepository>();
+            container.RegisterType<IReservationRepository, ReservationRepository>();
+            container.RegisterType<IRoomsRepostitory, RoomsRepository>();
             container.RegisterType<IReserverationTimesBL, ReserverationTimesBL>();
         }
     }
