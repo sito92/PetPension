@@ -1,2 +1,12 @@
 
 *.dll
+PetPension/.vs/PetPension/v15/Server/sqlite3/db.lock
+PetPension/.vs/PetPension/v15/Server/sqlite3/storage.ide
+PetPension/.vs/PetPension/v15/Server/sqlite3/storage.ide-shm
+PetPension/.vs/PetPension/v15/Server/sqlite3/storage.ide-wal
+PetPension/.vs/PetPension/v15/sqlite3/db.lock
+PetPension/.vs/PetPension/v15/sqlite3/storage.ide
+PetPension/.vs/PetPension/v15/sqlite3/storage.ide
+PetPension/.vs/PetPension/v15/sqlite3/storage.ide-shm
+PetPension/.vs/PetPension/v15/sqlite3/storage.ide-wal
+*.ide
